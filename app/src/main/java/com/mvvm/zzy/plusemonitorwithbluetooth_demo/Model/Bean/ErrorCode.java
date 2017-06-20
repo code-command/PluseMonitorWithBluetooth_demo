@@ -1,0 +1,30 @@
+package com.mvvm.zzy.plusemonitorwithbluetooth_demo.Model.Bean;
+
+import com.mvvm.zzy.plusemonitorwithbluetooth_demo.R;
+
+/**
+ * Created by Administrator on 2017/6/14 0014.
+ */
+
+public enum ErrorCode {
+    EMPTY_USERNAME(R.string.login_emptyNameHint),
+    EMPTY_USERPWD(R.string.login_emptyPwdHint),
+    USER_LOGINFAILURE(R.string.login_failuerLogin),
+
+    USERNAME_NOTUNIQUE(R.string.register_username_notUnique),
+    USERPWD_ERRORFORMAT(R.string.register_userpwd_errorFormat),
+    USERPWD_DISAFFINITY(R.string.register_userpwd_disaffinity),
+    USERAGE_OUTRANGE(R.string.register_userage_outRange),
+    REGISTER_SAVEFAILURE(R.string.register_savefailure),
+
+
+    ENDMARK(Integer.MAX_VALUE);
+    private int index;
+    ErrorCode(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+}
